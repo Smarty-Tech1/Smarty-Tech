@@ -1,0 +1,11 @@
+{
+  "name": "freefire-bot",
+  "version": "1.0.0",
+  "description": "Bot diamonds Free Fire.",
+  "main": "main.py",
+  "author": "Smarty-Tech",
+  "license": "MIT",
+  "dependencies": {
+    "discord.py": "^1.7.3"
+  }
+}
