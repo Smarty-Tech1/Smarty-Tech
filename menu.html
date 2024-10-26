@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu des Commandes - FreeFire Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Menu des Commandes FreeFire Bot</h1>
+    <p>Explorez les commandes pour obtenir de l'aide sur le jeu Free Fire</p>
+
+    <div class="command-grid" id="command-grid"></div>
+
+    <script>
+        const commandGrid = document.getElementById('command-grid');
+        const commands = ['!menu', '!strat', '!equipement'];
+
+        commands.forEach(command => {
+            const commandCard = document.createElement('div');
+            commandCard.classList.add('command-card');
+            commandCard.textContent = command;
+            commandGrid.appendChild(commandCard);
+        });
+    </script>
+</body>
+</html>
