@@ -1,10 +1,9 @@
 # Smarty-Tech
 
-## 📤 Deploying your bot on your own
+## 👋🏻 Welcome to Smarty-Tech/bot ¡
+On this bot you can reclam your coins and to get a another ... and you can play it in your bot
 
-If you can, it is preferable to host the files on your own server.
-
-Doing this can lead to better uptime and more control over customization (you can modify the code for your usage).
+             (code_usage).
 
 You can deploy the PHP files on any website server with PHP installed or as a Heroku app.
 
@@ -42,7 +41,4 @@ Refer to [CONTRIBUTING.md](/CONTRIBUTING.md) for more details on contributing, i
 
 <!-- markdownlint-disable MD033 -->
 ## 🅳🅴🅿︎🅻🅾︎🆈 🅼🅴🆃🅷🅾︎🅳 ☻︎
-𝐷𝐸𝑃𝐿𝑂𝑌 𝑂𝑁 𝑅𝐸𝑃𝐿𝐼𝑇 ☟
-<p align=""><a href="https://repl.it/github/Deploybot6/Smarty-Tech"> <img src="https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a>
-
-  sᴍᴀʀᴛʏ-ᴛᴇᴄʜ
+    sᴍᴀʀᴛʏ-ᴛᴇᴄʜ
