@@ -1,0 +1,95 @@
+import discord
+from discord.ext import commands
+import random
+
+# Créer une instance de bot avec un préfixe de commande
+bot = commands.Bot(command_prefix='.')
+
+# Menu d'aide
+help_menu = """
+**Menu d'aide :**
+- `.menu` : Affiche ce menu.
+- `!strat` : Donne un conseil stratégique pour le jeu.
+- `!equipement` : Donne un conseil sur l’équipement.
+- `.topup` : Remplir votre compte.
+- `.hack` : Exécuter un hack (non fonctionnel).
+- `.headshots` : Améliorer vos headshots.
+- `.profile` : Afficher votre profil.
+- `.creator` : Informations sur le créateur du bot.
+- `.support` : Obtenir de l'aide.
+- `.github` : Lien vers le dépôt GitHub.
+- `.ai` : Obtenir des conseils d'IA.
+"""
+
+# Commande pour afficher le menu d'aide
+@bot.command(name='menu')
+async def menu(ctx):
+    await ctx.send(help_menu)
+
+# Commande pour donner une stratégie
+@bot.command(name='strat')
+async def strat(ctx):
+    strategies = [
+        "Utilise toujours le couvert pendant les combats.",
+        "Ne tire pas à vue, attends d'avoir un bon angle.",
+        "Prends toujours des grenades et des kits de soin avec toi."
+    ]
+    await ctx.send(random.choice(strategies))
+
+# Commande pour donner des conseils sur l'équipement
+@bot.command(name='equipement')
+async def equipement(ctx):
+    equipment_tips = [
+        "Utilise l'AWM pour les tirs à longue portée.",
+        "Le M500 est parfait pour les combats rapprochés.",
+        "N'oublie pas d'optimiser ton inventaire pour avoir de la place."
+    ]
+    await ctx.send(random.choice(equipment_tips))
+
+# Commande pour remplir le compte
+@bot.command(name='topup')
+async def topup(ctx):
+    await ctx.send("Pour remplir votre compte, visitez notre site officiel.")
+
+# Commande pour afficher un message sur le hack (non fonctionnel)
+@bot.command(name='hack')
+async def hack(ctx):
+    await ctx.send("Cette fonctionnalité est actuellement non fonctionnelle.")
+
+# Commande pour améliorer les headshots
+@bot.command(name='headshots')
+async def headshots(ctx):
+    await ctx.send("Pratique avec des cibles stationnaires pour améliorer tes headshots!")
+
+# Commande pour afficher le profil
+@bot.command(name='profile')
+async def profile(ctx):
+    await ctx.send("Voici les informations de votre profil : [insérer des détails ici].")
+
+# Commande pour afficher le créateur
+@bot.command(name='creator')
+async def creator(ctx):
+    await ctx.send("Ce bot a été créé par **Smarty-Tech**.")
+
+# Commande pour obtenir de l'aide
+@bot.command(name='support')
+async def support(ctx):
+    await ctx.send("Pour obtenir de l'aide, contactez le support via DM.")
+
+# Commande pour le lien GitHub
+@bot.command(name='github')
+async def github(ctx):
+    await ctx.send("Voici le lien vers le dépôt GitHub : [insérer lien ici].")
+
+# Commande pour obtenir des conseils d'IA
+@bot.command(name='ai')
+async def ai(ctx):
+    ai_tips = [
+        "Travaille sur ton positionnement pour dominer les combats.",
+        "Utilise le son pour détecter les ennemis à proximité.",
+        "Change souvent d'emplacement pour éviter d'être repéré."
+    ]
+    await ctx.send(random.choice(ai_tips))
+
+# Démarrer le bot avec le token
+bot.run('YOUR_BOT_TOKEN')
